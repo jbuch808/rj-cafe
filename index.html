@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - Maria & Jay's Wedding</title>
+  <title>Home</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <h1>Maria & Jay</h1>
-    <p>Home</p>
+    <h1></h1>
   </header>
   
-<nav>
-  <ul>
+<nav id="navbar">
+  <div class="nav-header">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+  <ul id="nav-links" class="collapsed">
     <li><a href="index.html">Home</a></li>
     <li><a href="our-story.html">Our Story</a></li>
     <li><a href="event-details.html">Event Details</a></li>
@@ -33,9 +35,10 @@
   </main>
   
 <footer>
-  <p>© 2025 Maria & Jay</p>
+  <p id="footer-text"></p>
 </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
