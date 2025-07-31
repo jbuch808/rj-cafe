@@ -1,8 +1,12 @@
 
 function toggleMenu() {
-  const navLinks = document.getElementById("nav-links");
-  navLinks.classList.toggle("expanded");
-  navLinks.classList.toggle("collapsed");
+  const nav = document.getElementById("mobileNav");
+  const overlay = document.getElementById("mobileOverlay");
+  const isOpen = nav.classList.toggle("active");
+  overlay.classList.toggle("active");
+
+  // Optional: disable background scroll
+  document.body.style.overflow = isOpen ? "hidden" : "auto";
 }
 document.addEventListener("DOMContentLoaded", () => {
   if (typeof SITE_NAME !== "undefined") {

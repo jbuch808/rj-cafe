@@ -11,11 +11,18 @@
     <h1></h1>
   </header>
   
-<nav id="navbar">
-  <div class="nav-header">
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
-  </div>
-  <ul id="nav-links" class="collapsed">
+<!-- Hamburger Button -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Slide-in Nav Menu -->
+<div class="mobile-nav-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
+
+<nav class="mobile-nav" id="mobileNav">
+  <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="our-story.html">Our Story</a></li>
     <li><a href="event-details.html">Event Details</a></li>
