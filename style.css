@@ -88,20 +88,21 @@ footer {
 }
 
 .mobile-nav li {
-  margin-bottom: 1rem;
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .mobile-nav a {
   display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
   text-decoration: none;
   color: #333;
   font-size: 1.2rem;
   background: #f5e6e8;
   border-radius: 4px;
-  margin: 0;                 /* no margin on <a> itself */
-  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  margin: 0;                 /* ❌ remove margin */
+  width: 100%;              /* ✅ force it to stay inside parent */
+  box-sizing: border-box;   /* ✅ keep padding within width */
 }
 
 .mobile-nav a:hover {
