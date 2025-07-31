@@ -108,12 +108,6 @@ footer {
   background: #e8dcdc;
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-}
-
 /* ========== DESKTOP NAVIGATION ========== */
 .desktop-nav {
   background: #f5e6e8;
@@ -153,5 +147,15 @@ footer {
   .hamburger,
   .mobile-nav-overlay {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .desktop-nav {
+    display: none;
   }
 }
