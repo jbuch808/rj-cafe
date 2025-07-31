@@ -94,13 +94,15 @@ footer {
 
 .mobile-nav a {
   display: block;
-  width: 100%;
   padding: 0.75rem 1rem;
   text-decoration: none;
   color: #333;
   font-size: 1.2rem;
   background: #f5e6e8;
   border-radius: 4px;
+  margin-right: 1rem;    /* ✅ prevent overflow */
+  margin-left: 0.25rem;  /* ✅ optional margin on left for symmetry */
+  box-sizing: border-box; /* ✅ ensure padding stays inside width */
 }
 
 .mobile-nav a:hover {
